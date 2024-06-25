@@ -15,14 +15,14 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    # List your dependencies here, e.g., "requests >= 2.25.1"
+    roma,
+    torch,
+    torchvision,
+    scipy,
+    einops,
+    trimesh,
+    huggingface-hub[torch]>=0.22
 ]
 
 [tool.setuptools]
 packages = ['dust3r', 'dust3r.cloud_opt', 'dust3r.heads', 'dust3r.utils', 'croco.models']
-
-# [tool.setuptools.packages.find]
-# where = ["."]  # list of folders that contain the packages (["."] by default)
-# include = ['dust3r', 'croco.models']  # package names should match these glob patterns (["*"] by default)
-# exclude = []  # exclude packages matching these glob patterns (empty by default)
-# namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
