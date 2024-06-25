@@ -19,7 +19,7 @@ dependencies = [
 ]
 
 [tool.setuptools]
-packages = ['dust3r', 'croco.models']
+packages = ['dust3r', 'dust3r.cloud_opt', 'dust3r.heads', 'dust3r.utils', 'croco.models']
 
 # [tool.setuptools.packages.find]
 # where = ["."]  # list of folders that contain the packages (["."] by default)
